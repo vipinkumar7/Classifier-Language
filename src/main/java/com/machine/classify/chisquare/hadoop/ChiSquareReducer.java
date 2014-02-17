@@ -21,6 +21,16 @@ import com.machine.classify.utils.COL;;
  */
 public class ChiSquareReducer extends MapReduceBase implements Reducer<Text,Text,Text,Text>{
 
+	
+	
+	/*
+	 *      |  C    |   NotC  | Total
+	 * A    |   A   |   B      | A+B
+	 * 
+	 * NotA |   C   |    D     | C+D
+	 * 
+	 * Total|  A+C  |    B+D   | N
+	 */
 	private Text valuesWithouAttribute=new Text(); 
 	
 	private StringBuilder builder=new StringBuilder();

@@ -9,10 +9,18 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 
+/**
+ * 
+ * @author Vipin Kumar
+ *
+ */
 public class GroupAttributesReducer  extends MapReduceBase implements Reducer<Text, Text, Text, Text>{
 
 	public void reduce(Text key, Iterator<Text> value,OutputCollector<Text, Text> collector, Reporter reporter) throws IOException {
 		
+		/**
+		 * collect all the classes for the attribute
+		 */
 		StringBuilder  str=new StringBuilder();
 		while(value.hasNext())
 		{

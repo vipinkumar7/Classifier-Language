@@ -20,7 +20,7 @@ import com.machine.classify.model.ClassesStats;
 /**
  * 
  * @author Vipin Kumar
- *
+ * This driver is written for calculating Chi-Square independence test
  */
 public class ChiSquareDriver extends Configured implements Tool {
 	private static final Log LOG = LogFactory.getLog(ChiSquareDriver.class);

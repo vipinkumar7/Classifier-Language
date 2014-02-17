@@ -20,6 +20,9 @@ public class ChiSquareMapper extends MapReduceBase implements Mapper<LongWritabl
 	
 	private Text attribute=new Text();
 	
+	/**
+	 * 
+	 */
 	public void map(LongWritable key, Text value,
 			OutputCollector<Text, Text> context, Reporter reporter) throws IOException {
 
@@ -31,6 +34,11 @@ public class ChiSquareMapper extends MapReduceBase implements Mapper<LongWritabl
 		
 	}
 	
+	/**
+	 * 
+	 * @param i
+	 * @return
+	 */
 	public boolean isOdd(int i)
 	{
 		return i%2!=0;

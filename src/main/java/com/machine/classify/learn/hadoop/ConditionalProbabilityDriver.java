@@ -14,13 +14,17 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 
 import com.machine.classify.model.AttributeClassData;
 
+/**
+ * 
+ * @author Vipin Kumar
+ *
+ */
 public class ConditionalProbabilityDriver {
 	
 	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
 		
 		/*fill the attribute data first*/
 		AttributeClassData.getAttributeData();
-		
 		
 		Configuration conf = new Configuration();
 		conf.addResource(new Path("/usr/local/hadoop/conf/core-site.xml"));

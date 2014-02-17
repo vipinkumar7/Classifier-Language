@@ -11,6 +11,7 @@ import org.apache.hadoop.mapred.Reporter;
  * 
  * @author Vipin Kumar
  * 
+ *  Group mapper input data is in the form of ***********attribute  | Class type | no_of_times_appear
  */
 public class GroupAttributesMapper extends MapReduceBase implements
 		Mapper<LongWritable, Text, Text, Text> {

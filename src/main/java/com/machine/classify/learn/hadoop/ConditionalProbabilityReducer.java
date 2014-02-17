@@ -16,6 +16,8 @@ import com.machine.classify.utils.COL;
 /**
  * 
  * @author Vipin Kumar
+ * 
+ * This class is Responsible for calculating the P(X|C)  **** probability of a feature given its belong to class C 
  *
  */
 public class ConditionalProbabilityReducer  extends Reducer<Text, Text, DBOutputWritable, NullWritable>{

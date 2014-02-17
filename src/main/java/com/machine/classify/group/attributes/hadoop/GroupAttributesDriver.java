@@ -9,7 +9,7 @@ import org.apache.hadoop.util.*;
 /**
  * 
  * @author Vipin Kumar
- *
+ *This class is written for grouping similar attributes in a line with their sum
  */
 public class GroupAttributesDriver extends Configured implements Tool{
 	
